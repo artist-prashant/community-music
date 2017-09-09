@@ -82,20 +82,20 @@ audio {
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
-	background-color: #F5F5F5;
+	 background-color: rgba(27, 30, 50, 0);
 }
 
 #scroll::-webkit-scrollbar
 {
 	width: 5px;
-	background-color: #F5F5F5;
+	background-color: transparent;
 }
 
 #scroll::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #555;
+	 background-color: rgba(27, 30, 50, 0.3);
 }
 input{
     color:black;
