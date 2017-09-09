@@ -1,0 +1,103 @@
+/*!
+ * Start Bootstrap - Blog Post (http://startbootstrap.com/template-overviews/blog-post)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-post/blob/master/LICENSE)
+ */
+
+body {
+    padding-top: 54px;
+}
+
+@media (min-width: 200px) {
+    body {
+        background:url('http://accentmusictherapy.com/wp-content/uploads/2013/05/Music_is_my_Life_2_by_LietingaDiena.jpg');
+        padding-top: 56px;
+    }
+    audio {
+    width: 100%
+    }
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background:#f2f2f2;
+    font-size: small;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px
+}
+
+.no-border {
+    border: 0;
+    box-shadow: 0 2px 2px #888888;
+    background-color: rgba(211, 211, 211, 0.6)
+}
+.no-margin{
+    margin-bottom: 10px
+}
+#scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#scroll::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+#scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #555;
+}
+}
+
+audio {
+    width: 100%
+    }
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background:#f2f2f2;
+    font-size: small;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px
+}
+
+.no-border {
+    border: 0;
+    box-shadow: 0 2px 2px #888888;
+    background-color: rgba(211, 211, 211, 0.6)
+}
+.no-margin{
+    margin-bottom: 10px
+}
+#scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#scroll::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+#scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #555;
+}
+input{
+    color:black;
+    font-weight: bold;
+}

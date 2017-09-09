@@ -1,0 +1,49 @@
+<% include _header %>
+    <!-- Page Content -->
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+           <div class="col-xs-4" style="text-align:center;padding:100px;margin:auto;opacity:0.7;">     
+            <audio id="aud" controls autoplay>
+	      <source src="" type="audio/mpeg" />
+            </audio>
+            </div>
+            
+            <div id="scroll" class="panel-body scrollbar" runat="server" style="margin:auto;overflow-y: scroll; height: 350px;width:300px;">
+            <% data.songs.forEach(function(song){ %>
+                <div class="wrapItems"style="text-align:center;padding:3px;">
+                    <button type="button" class="btn btn-info btn-sm but"><%=song.sName %></button>
+                </div>
+                
+            <% }) %>
+            </div>
+          
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4" style="margin:230px 0;">
+
+                  <div class="card my-4" style="background-color: rgba(211, 211, 211, 0.8);">
+            <h5 class="card-header">Upload Songs</h5>
+            <div class="card-body">
+                <form action="/upload" method="POST" enctype="multipart/form-data">
+                <div class="form-group" style="position:relative;">
+		<a class='btn btn-primary' href='javascript:;'>
+			Choose File...
+			<input type="file" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file" size="30"  onchange='$("#upload-file-info").html($(this).val());'>
+		</a>
+		&nbsp;
+		<span class='label label-info' id="upload-file-info"></span>
+	</div>
+                <input type="submit" value="upload" class="btn btn-success btn-sm" style="margin:0 10px;">
+                </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+<% include _footer %>

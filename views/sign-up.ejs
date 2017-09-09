@@ -1,0 +1,19 @@
+<% include _header %>
+
+    <div class="container my-4 col-sm-5">
+         <h4 class="container-header" style="margin:150px 0 15px 10px"><strong>sign up</strong></h4>
+        <div class="container-body">
+            <form action="/signup" method="POST">
+                <div class="form-group">
+
+                    <input type="text" name="username" class="form-control no-border no-margin" placeholder="username" required autofocus>
+                    <input type="password" name="password" class="form-control no-border no-margin" placeholder="password" required>
+                    <input type="email" name="email" class="form-control no-border no-margin" placeholder="email address">
+                </div>
+                <input type="submit" value="submit" class="btn btn-success btn-sm" style="margin:0 10px;">
+            </form>
+        </div>
+    </div>
+
+
+    <% include _footer %>
