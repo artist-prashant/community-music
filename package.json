@@ -6,6 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "example",
+    "heroku",
+    "community-music",
+    "music-community",
+    "upload-example",
+    "nodejs",
+    "gridfs",
+    "mongodb",
+    ".mp3"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -21,5 +32,8 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "path": "^0.12.7"
+  },
+   "engines": {
+    "node": "8.2.1"
   }
 }
