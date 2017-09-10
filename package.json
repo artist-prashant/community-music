@@ -1,8 +1,8 @@
 {
   "name": "community-music",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This example is so cool.",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,7 @@
     "mongodb",
     ".mp3"
   ],
+  "repository": "https://github.com/artist-prashant/community-music.git",
   "author": "",
   "license": "ISC",
   "dependencies": {
