@@ -22,9 +22,17 @@ app.set('view engine','ejs');
 
 app.use(express.static('./static'));
 
+var URI= process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost:27017/ganastore';
+
+var port= process.env.PORT || 7700;
+
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/ganastore', {
-    useMongoClient: true
+mongoose.connect(URI, {useMongoClient: true},function(err,res){
+      if (err) {
+      console.log ('ERROR connecting to: ' + URI + '. ' + err);
+      } else {
+      console.log ('Connected to: ' + URI);
+      }
 });
 var conn=mongoose.connection;
 
@@ -100,10 +108,10 @@ app.get('/listen/:name',function(req,res){
     rs.pipe(res);
 });
 
-app.listen(7700, function (err) {
+app.listen(port, function (err) {
     if (err) throw err;
     else {
-        console.log('Server started on port: 7700');
+        console.log('Server started on port: '+port);
     }
 });
 
