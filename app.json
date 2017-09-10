@@ -1,0 +1,33 @@
+{
+  "name": "community-music",
+  "description": "This app does one little thing, and does it well.",
+  "keywords": [
+   "example",
+    "heroku",
+    "community-music",
+    "music-community",
+    "upload-example",
+    "nodejs",
+    "gridfs",
+    "mongodb",
+    ".mp3"
+  ],
+  "repository": "https://github.com/artist-prashant/community-music.git",
+  "scripts": {
+    "postdeploy": "bundle exec rake bootstrap"
+  },
+  "env": {
+    "SECRET_TOKEN": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    }
+  },
+   "environments": {
+    "test": {
+      "scripts": {
+        "test": "bundle exec rake test"
+      }
+    }
+  },
+    "addons":["mongolab"]
+}
